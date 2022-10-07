@@ -1,0 +1,9 @@
+kubectl create namespace jenkins
+kubectl get namespaces
+kubectl create -f jenkinsdeployment.yaml -n jenkins
+kubectl get deployments -n jenkins
+kubectl create -f jenkinsservice.yaml -n jenkins
+kubectl get services -n jenkins
+minikube ip
+kubectl get pods -n jenkins
+kubectl logs pod_name -n jenkins
